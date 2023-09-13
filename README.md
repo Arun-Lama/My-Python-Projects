@@ -1,21 +1,31 @@
-**Scraping Data from Sharesansar**
+# Purpose of the Program
 
-The program then scrapes data from sharesansar.com starting from the day after the latest available data.
-It uses Beautiful Soup to parse the HTML content of the website.
-Selenium is employed to interact with the web page, enter dates, and retrieve data.
-The program excludes data for Fridays and Saturdays.
-**Downloading Index Data**
+The purpose of this program is to automate the process of downloading daily stock price and indices values and store it in a csv file. The code can be run daily to get the daily price updated. In case the date is missed, the program automatically detects the remaining dates to be downloaded. 
 
-The program also downloads various indices data from Sharesansar, including sectors like Nepse Index, Banking SubIndex, and others. It collects data for the specified date range.
+# How to Run
 
-**Usage**
+Download the Jupyter notebook file and refer to the PriceHistory.csv file within the code. 
 
-Ensure you have the required Python libraries installed, such as pandas, numpy, BeautifulSoup, and Selenium.
-Modify the PriceHistory.csv file path as needed in the code.
-Run the script, and it will automatically fetch and merge the data.
+# Output CSV Format
 
-**Contributing**
+![Out CSV Format](https://github.com/Arun-Lama/Nepse-Price_scraping/blob/86331f9673468fceba541bfe868ce9bf055ea5e6/output%20format.png)
 
-Feel free to contribute to this project by improving the code or adding new features. Create a pull request or open an issue for discussion.
 
-**Completed by Arun Lama**
+# Libraries Used
+
+
+* `pandas`: Used for data manipulation and working with DataFrames.
+* `numpy`: Used for numerical operations.
+* `BeautifulSoup` from `bs4`: Used for web scraping HTML content.
+* `selenium`: Used for web automation and interaction with web pages.
+* `webdriver_manager.chrome`: Used to manage the ChromeDriver.
+* `chrome.service.Service` from `selenium.webdriver.chrome.service`: Used for configuring ChromeDriver service.
+* `selenium.webdriver.common.by.By`: Used for locating elements on web pages.
+* `selenium.webdriver.chrome.options.Options`: Used for configuring ChromeDriver options.
+* `calendar`: Used for calendar-related operations.
+* `os`: Used for interacting with the operating system.
+* `time`: Used for adding delays in the script execution.
+
+# Contributing
+
+If you're interested in contributing to this project, I welcome your input! Whether you want to fix a bug, add a new feature, or improve the code in any way, your contributions are valuable.
